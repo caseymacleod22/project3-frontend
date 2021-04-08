@@ -1,0 +1,39 @@
+import { useState, useEffect } from 'react'
+import './App.css';
+import Header from './components/Header/Header'
+import Stadiums from './components/Stadiums/Stadiums'
+
+
+
+
+export default function App() {
+  const [stadiums, setStadiums] = useState([])
+  
+    async function getAppData() {
+    const BASE_URL = 'http://localhost:3001/api/stadiums'
+    const data = await fetch(BASE_URL).then(res => res.json())
+    setStadiums(data.results)
+    console.log(data)
+  }
+
+  useEffect(() => {
+    getAppData()
+  }, [])
+  
+  
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Header />
+      </header>
+      <div> 
+        <Stadiums data={stadiums}/>
+      </div> 
+    </div>
+  );
+}
+  
+  
+  
+  
+
