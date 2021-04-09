@@ -19,9 +19,9 @@ export default function App() {
   useEffect(() => {
     getAppData()
   }, [])
+
   
-  console.log(stadiums)
-  return (
+return (
 <div className="App">
   <header className="App-header">
     <Header />
