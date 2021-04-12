@@ -20,7 +20,7 @@ export default function App() {
     getAppData()
   }, [])
 
-  
+
 return (
 <div className="App">
   <header className="App-header">

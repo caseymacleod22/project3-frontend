@@ -1,11 +1,6 @@
 import { Link } from 'react-router-dom'
 
 
-function AddStadium() {
-    
-    console.log("I've been there!")
-}
-
 const Stadiums = (props) => { 
     return (
         <div>
@@ -15,7 +10,7 @@ const Stadiums = (props) => {
                 return (
             <div className='stadiums'>{stadiums.stadiumName}
                 <p>{stadiums.location}</p>
-                <Link to='/mystadiums' className='btn' onClick={AddStadium}>I've Been There!</Link>
+                <Link to='/mystadiums' className='btn'>I've Been There!</Link>
             </div>
                 )
             })}
