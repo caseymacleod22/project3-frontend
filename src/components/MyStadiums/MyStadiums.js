@@ -1,11 +1,12 @@
-
+import {Link} from 'react-router-dom'
 
 
 function MyStadiums (props) {
     return (
-        <div>
-            <p>{props.data}</p>
-        </div>
+       <div>
+          <h1>My Stadiums</h1>
+          <Link to='/'>Home Page</Link>
+        </div> 
     )
 }
 

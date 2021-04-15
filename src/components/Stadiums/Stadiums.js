@@ -10,9 +10,9 @@ const Stadiums = (props) => {
             method:'DELETE',
             headers: {'Content-Type': 'Application/json'}
         })
-            props.getAppData()
-        }
     }
+    props.getAppData()
+}
 
 
     
