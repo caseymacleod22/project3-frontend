@@ -1,10 +1,21 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
-import {handleClick} from '../../components/MyStadiums/MyStadiums'
-
-
 
 const Stadiums = (props) => { 
+
+    const deleteStadium = (stadiumId) => {
+    if(window.confirm('Are you sure?'))
+    {
+        fetch('http://localhost:3001/api/stadiums/stadiums/'+stadiumId,{
+            method:'DELETE',
+            headers: {'Content-Type': 'Application/json'}
+        })
+            props.getAppData()
+        }
+    }
+
+
+    
     return (
         <div>
             
@@ -14,11 +25,13 @@ const Stadiums = (props) => {
                 return (
             <div className='stadiums'>{stadiums.stadiumName}
                 <p>{stadiums.location}</p>
-                <Link to='/mystadiums' className='btn' onClick={() => handleClick(props)}>I've Been There!</Link>
+                <button className='btn' onClick={() => deleteStadium(stadiums._id)}>Remove Stadium</button>
             </div>
                 )
             })}
         </div>
     )}
+
+
 
   export default Stadiums

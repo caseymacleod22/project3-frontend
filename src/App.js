@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css';
 import Header from './components/Header/Header'
-import {MyStadiums} from './components/MyStadiums/MyStadiums';
+import MyStadiums from './components/MyStadiums/MyStadiums';
 import Stadiums from './components/Stadiums/Stadiums'
 
 
@@ -31,10 +31,10 @@ return (
     <Router>
       <div> 
         <Route exact path='/'>
-          <Stadiums data={stadiums}/>
+          <Stadiums data={stadiums} getAppData={getAppData}/>
         </Route>
          <Route exact path='/mystadiums'>
-           <MyStadiums data={stadiums}/>
+           <MyStadiums />
          </Route>
       </div> 
     </Router> 
