@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css';
 import Header from './components/Header/Header'
 import MyStadiums from './components/MyStadiums/MyStadiums';
-import Stadiums from './components/Stadiums/Stadiums'
+import {Stadiums} from './components/Stadiums/Stadiums'
 
 
 export default function App() {
