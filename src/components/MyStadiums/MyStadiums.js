@@ -1,17 +1,33 @@
 import { Link } from 'react-router-dom'
-import {handleClick} from '../../components/Stadiums/Stadiums'
+import Stadiums from '../../components/Stadiums/Stadiums'
+
 import {useState, useEffect} from 'react'
+
+
+
+function handleClick(props) {
+    const test = props.data.beenThere = true
+    console.log(test)
+          
+      }
 
 
 const MyStadiums = (props) => {
     return (
-    <div>
-        <div className="mystadiumslink">
-            <h1>My Stadiums</h1>
+        <div>
+            
             <Link to='/'>HOME</Link>
+                {props.data.map((stadiums) => {
+                // console.log(stadiums)
+                if(stadiums.beenThere === true) {
+                return (
+            <div className='stadiums'>{stadiums.stadiumName}
+                <p>{stadiums.location}</p>
+            </div>
+                )
+            }
+            })}
         </div>
-    </div>
-    )
-}
+    )}
 
-export default MyStadiums
+export {MyStadiums, handleClick}

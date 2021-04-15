@@ -1,12 +1,7 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
+import {handleClick} from '../../components/MyStadiums/MyStadiums'
 
-
-function handleClick(props) {
-  const test = (props.data.beenThere = true)
-  console.log(test)
-        
-    }
 
 
 const Stadiums = (props) => { 
@@ -26,4 +21,4 @@ const Stadiums = (props) => {
         </div>
     )}
 
-  export {Stadiums, handleClick}
+  export default Stadiums
