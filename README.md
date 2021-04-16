@@ -14,7 +14,7 @@ Track all of the Major League Baseball stadiums you have been to!
 - Express
 - Bootstrap
 - MongoDB (database)
-- Netlify (for deployment)
+- Heroku (for deployment)
 
 ## Screenshots
 ![Home Page](./src/images/home-page.png)
