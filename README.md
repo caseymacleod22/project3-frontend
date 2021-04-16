@@ -12,6 +12,7 @@ Track all of the Major League Baseball stadiums you have been to!
 - CSS
 - NodeJS
 - Express
+- Bootstrap
 - MongoDB (database)
 - Netlify (for deployment)
 
