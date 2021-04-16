@@ -23,5 +23,6 @@ Track all of the Major League Baseball stadiums you have been to!
 - Display a picture of each stadium
 - Show current weather data for each stadium
 
-
+##  ➡️ Check It Out!
+[Click here](https://caseymacleod-stadium-tracker.herokuapp.com/) to go to the site!
 
