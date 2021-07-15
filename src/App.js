@@ -33,9 +33,9 @@ return (
         <Route exact path='/'>
           <Stadiums data={stadiums} getAppData={getAppData}/>
         </Route>
-         <Route exact path='/mystadiums'>
+         {/* <Route exact path='/mystadiums'>
            <MyStadiums />
-         </Route>
+         </Route> */}
       </div> 
     </Router> 
   </Switch> 
